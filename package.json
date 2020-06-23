@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-typescript",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "One config to rule them all",
   "keywords": [
     "eslint",
