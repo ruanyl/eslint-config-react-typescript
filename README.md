@@ -12,7 +12,7 @@ $ yarn add -D eslint @typescript-eslint/eslint-plugin eslint-config-react-typesc
 module.exports = {
   extends: ['eslint-config-react-typescript'],
   env: {
-    browser: true,
+    node: true,
   },
   parserOptions: {
     project: 'tsconfig.json',
@@ -27,7 +27,7 @@ module.exports = {
 module.exports = {
   extends: ['eslint-config-react-typescript/lib/react'],
   env: {
-    node: true,
+    browser: true,
   },
   parserOptions: {
     project: 'tsconfig.json',
