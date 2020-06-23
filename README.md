@@ -1,6 +1,6 @@
 # Eslint lint configuration for TypeScript and React
 [![npm](https://img.shields.io/npm/v/eslint-config-react-typescript.svg)](https://www.npmjs.com/package/eslint-config-react-typescript)
-![github-workflow](https://github.com/ruanyl/eslint-config-react-typescript/workflows/CI/badge.svg)
+![github-workflow](https://github.com/ruanyl/eslint-config-react-typescript/workflows/Build/badge.svg)
 
 ## Installation
 
