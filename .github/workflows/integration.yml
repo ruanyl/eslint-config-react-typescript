@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: yarn build
     - name: Publish to NPM
-      uses: pascalgn/npm-publish-action@v1
+      uses: pascalgn/npm-publish-action@1.2.0
       with:
         tag_name: "v%s"
         commit_pattern: "^Release (\\S+)"
