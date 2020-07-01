@@ -6,6 +6,12 @@ const config: Linter.Config = {
     'react/prop-types': 'off',
     'react/display-name': 'off',
   },
+  plugins: ['react'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
 };
 
 export = config;
