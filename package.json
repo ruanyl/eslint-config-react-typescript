@@ -10,8 +10,9 @@
   "author": "Yulong Ruan <ruanyu1@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "yarn build"
+    "build": "tsc --declaration",
+    "prepublish": "npm run build",
+    "release": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [skip ci]'"
   },
   "dependencies": {
     "@typescript-eslint/parser": "^4.28.4",
