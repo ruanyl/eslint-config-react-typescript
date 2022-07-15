@@ -20,22 +20,22 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Set up Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: "14"
+        node-version: "16"
         registry-url: 'https://registry.npmjs.org'
     - name: Install dependencies
-      run: yarn install
+      run: pnpm install
     - name: Build
-      run: yarn build
+      run: pnpm run build
     - name: Config git user
       run: |
         git config --local user.email "ruanyu1@gmail.com"
         git config --local user.name "Yulong Ruan"
     - name: Tag release
-      run: yarn release
+      run: pnpm run release
     - name: Push to master
       run: git push --follow-tags origin master
     - name: Publish to NPM
