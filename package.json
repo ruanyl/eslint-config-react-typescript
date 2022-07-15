@@ -11,7 +11,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc --declaration",
-    "prepublish": "npm run build",
+    "prepublishOnly": "pnpm run build",
     "release": "standard-version --releaseCommitMessageFormat 'chore(release): {{currentTag}} [skip ci]'"
   },
   "dependencies": {
